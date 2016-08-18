@@ -1,0 +1,121 @@
+.news-vj-postcode-lookup {
+    width: 100%;
+    border-top: solid 1px $silver;
+    padding: 20px 0 0;
+
+    > label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.news-vj-postcode-lookup__input-container {
+    position: relative;
+}
+
+.news-vj-postcode-lookup__input {
+    width: calc(100% - 44px);
+    float: left;
+    vertical-align: middle;
+    height: 44px;
+    line-height: 44px;
+    color: $mine_shaft;
+    border: solid 1px #d2d2d2;
+    padding: 0.5em 8px;
+    border-radius: 0;
+
+    @media (min-width: 450px) {
+        padding: 0.5em 16px;
+    }
+}
+
+.news-vj-postcode-lookup__button {
+    position: relative;
+    padding: 12px;
+    border: 0;
+    width: 44px;
+    height: 44px;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,.74902);
+    transition: background-color 1s;
+
+    &:hover, &:focus {
+        background-color: rgb(188,217,217);
+    }
+
+    &[disabled] {
+        background-color: #dcdcdc;
+
+        .bbc-news-visual-journalism-icon--search {
+            fill: black;
+        }
+    }
+}
+
+.bbc-news-visual-journalism-loading-spinner {
+    display: none;
+}
+
+.bbc-news-visual-journalism-icon--search {
+    display: block;
+    fill: white;
+}
+
+.news-vj-postcode-lookup__button--loading {
+    background-color: rgb(188,217,217);
+
+    .bbc-news-visual-journalism-loading-spinner {
+        display: block;
+        max-width: 22px;
+        height: 22px;
+        background-size: 100%;
+        margin: -10px 0 0 -12px;
+    }
+
+    .bbc-news-visual-journalism-icon--search {
+        display: none;
+    }
+}
+
+.bbc-news-vj-grid-wrapper__fluid-inner {
+    padding: 0 8px;
+
+    @media (min-width: 592px) {
+        padding: 0 32px;
+    }
+}
+
+.lookup-title {
+    font-size: 20px;
+    line-height: 1.25;
+    margin: 16px 0 20px;
+    color: $black;
+
+    @media (min-width: 592px) {
+        margin: 16px 0 15px;
+    }
+}
+
+.result {
+    border-top: solid 1px $silver;
+    display: none;
+    padding: 15px 0 0;
+    &__vote {
+        width: 100%;
+        color: $white;
+        background-color: $mine_shaft;
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+        line-height: 64px;
+    }
+    &__text {
+        padding: 15px 0 0;
+        font-size: 16px;
+
+        @media (min-width: 592px) {
+            padding: 0 0 0;
+        }
+    }
+}

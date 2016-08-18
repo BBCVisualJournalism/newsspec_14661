@@ -1,0 +1,11 @@
+{
+  "name": "Shared dependencies",
+  "dependencies": {
+    "sharetools": "https://github.com/bbc/news-vj-sharetools.git",
+    "news-vj-ws-config": "https://github.com/bbc/news-vj-ws-config.git",
+    "news-vj-css-defaults": "https://github.com/bbc/news-vj-css-defaults.git",
+    "news-vj-postcode-lookup": "https://github.com/bbc/news-vj-postcode-lookup.git#config",
+    "jquery": "^2.2.0",
+    "normalize-scss": "^3.0.3"
+  }
+}

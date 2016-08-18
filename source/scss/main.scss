@@ -1,0 +1,11 @@
+@import "./../../bower_components/normalize-scss/_normalize.scss";
+@import "./../../bower_components/news-vj-css-defaults/css/main";
+
+.bbc-news-vj-wrapper {
+    @import "colors";
+    @import "autocomplete";
+    @import "search";
+
+    background-color: $gallery;
+    line-height: 1.25;
+}

@@ -1,0 +1,39 @@
+.autocomplete-suggestions {
+    color: $mine_shaft;
+    background: $white;
+    overflow: auto;
+    top: 44px;
+    left: 0;
+    right: 44px;
+    width: auto !important;
+}
+
+.autocomplete-suggestion {
+    border: 1px solid $custom_grey;
+    border-bottom: 0;
+    padding: 13px 10px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 1em;
+
+    &:first-child {
+        border-top: 0;
+    }
+
+    &:last-child {
+        border-bottom: 1px solid $custom_grey;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+}
+
+.autocomplete-selected {
+    background-color: $alto;
+}
+
+.autocomplete-group {
+    background-color: $gallery;
+    padding: 5px;
+}
